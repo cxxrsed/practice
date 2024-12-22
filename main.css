@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap'); /* шрифт названия */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px;
+    background: rgb(55,55,96);
+    background: radial-gradient(circle, rgba(55,55,96,1) 0%, rgba(2,0,36,1) 100%);
+    color: #333;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #5a5a5a;
+    user-select: none;
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    background-color: #1e1633;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px 15px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #6d50b6;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #6d50b6;
+    border-color: #1e1633;
+    /* color: black; */
+}
+
+.section {
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    background: rgba(30, 22, 51, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #6d50b6;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: #1e1633;
+    color: white;
+    width: 25%;
+    padding: 10px;
+    margin: 7px 0px;
+    border: 2px solid #6d50b6;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-width: 3px;
+    outline: none;
+}
+
+.client-item, .product-item, .purchase-item {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1e1633;
+    border: 1px solid #6d50b6;
+    border-radius: 5px;
+    background: rgba(30, 22, 51, 0.5);
+    /* backdrop-filter: blur(100px); */
+}
+
+.client-item:hover, .product-item:hover, .purchase-item:hover {
+    background: rgba(44, 32, 75, 0.5);
+}
+
+.client-item span, .product-item span, .purchase-item span {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
