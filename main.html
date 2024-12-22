@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lume Cafe</title>
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+    <font size="14"><h1 style="color:#ffffff">Lume Cafe</h1></font>
+
+    <button onclick="showSection('clientsSection')">Клиенты</button>
+    <button onclick="showSection('productsSection')">Товары</button>
+    <button onclick="showSection('purchasesSection')">Покупки</button>
+
+    <div id="clientsSection" class="section">
+        <h2>Клиенты</h2>
+        <form id="addClientForm">
+            <input type="text" placeholder="Имя клиента" required><br>
+            <input type="text" placeholder="Телефон клиента" required><br>
+            <button type="submit">Добавить клиента</button>
+        </form>
+        <div id="clientList"></div>
+    </div>
+
+    <div id="productsSection" class="section">
+        <h2>Товары</h2>
+        <form id="addProductForm">
+            <input type="text" placeholder="Название товара" required><br>
+            <input type="number" placeholder="Цена товара" required><br>
+            <input type="number" placeholder="Количество товара" value=1 required><br>
+            <button type="submit">Добавить товар</button>
+        </form>
+        <div id="productList"></div>
+    </div>
+    <div id="purchasesSection" class="section">
+        <h2>Покупки</h2>
+        <form id="addPurchaseForm">
+            <input type="text" placeholder="Название покупки" required><br>
+            <input type="number" placeholder="Цена покупки" required disabled="true"><br>
+            <input type="number" placeholder="Количество" value=1 required><br>
+            <input type="text" placeholder="Имя клиента" required><br>
+            <button type="submit">Добавить заказ</button>
+        </form>
+        <div id="purchaseList"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
